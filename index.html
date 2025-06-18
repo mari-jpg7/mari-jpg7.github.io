@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Restaurant Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+    <body>
+    <h1 id="title">Restaurant Survey Form</h1>
+    <p id="description">We want to hear about your experience at our restaurant!</p>
+    <p> Please fill out the following form</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label id="name-label" for="name">Name: <input id="name" name="name" placeholder="John" type="text" required /></label>
+        <label id="email-label" for="email">Email: <input id="email" name="email" placeholder="Enter your email" type="email" required /></label>
+        <label id="number-label" for="number">Age:
+  <input id="number" name="age" type="number" min="10" max="100" placeholder="Your age" required />
+</label>
+      </fieldset>
+      <fieldset>
+         <label for="referrer">Where did you visit us?
+          <select id="dropdown" name="referrer">
+            <option value="">Select a site</option>
+            <option value="1">Lima</option>
+            <option value="2">Buenos Aires</option>
+            <option value="3">Barranquilla</option>
+            <option value="4">Montevideo</option>
+          </select>
+          </fieldset>
+          <fieldset>
+            <legend>How would you say our food tasted like?</legend>
+            <label for="taste"><input id="spicy" type="checkbox" value="spicy"/>Spicy</label>
+            <label for="taste"><input id="sweet" type="checkbox" value="sweet"/>Sweet</label>
+            <label for="taste"><input id="cold" type="checkbox" value="cold"/>Cold</label>
+            <label for="taste"><input id="hot" type="checkbox" value="hot"/>Hot</label>
+          </fieldset>
+
+          <fieldset>
+        <legend>How would your rank your experience at our place?</legend>
+        <label for="terrible"><input id="terrible" type="radio" name="review-ranking" value="terrible" class="inline" checked /> Terrible</label>
+        <label for="not-bad"><input id="not-bad" type="radio" name="review-ranking" value="not-bad" class="inline" /> Not Bad</label>
+        <label for="good"><input id="good" type="radio" name="review-ranking" value="good" class="inline" /> Good</label>
+        <label for="excellent"><input id="excellent" type="radio" name="review-ranking" value="excellent" class="inline" /> Excellent</label>
+      </fieldset>
+        <fieldset>
+        <label for="bio">Leave a Review:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="How can we improve next time?"></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
